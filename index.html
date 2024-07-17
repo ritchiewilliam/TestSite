@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>title</title>
-</head>
-<body>
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accept a payment</title>
+    <meta name="description" content="A demo of a payment on Stripe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="checkout.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Display a payment form -->
     <form id="payment-form">
       <div id="payment-element">
         <!--Stripe.js injects the Payment Element-->
@@ -16,10 +21,5 @@
       </button>
       <div id="payment-message" class="hidden"></div>
     </form>
-    
-    <!-- <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js"></script> -->
-    <script src="https://js.stripe.com/v3/"></script>
-    <!-- <script src="/script.js"></script> -->
-</body>
+  </body>
 </html>
